@@ -1,0 +1,50 @@
+html {
+	background-color: #2b2b2b;
+}
+
+.header {
+	text-align: center;
+	font-size: 60px;
+	color: #d0d0d0;
+}
+
+.password-field {
+	width: fit-content;
+	height: fit-content;
+	margin: 0 auto;
+}
+
+.copy-button {
+	width: fit-content;
+	height: fit-content;
+	display: block;
+	outline: none;
+	font-size: 16px;
+	border: 1px solid #000000;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 100px;
+}
+
+#password {
+	width: fit-content;
+	height: fit-content;
+	display: block;
+	border: 1px solid #000000;
+	font-size: 20px;
+	resize: none;
+	outline: none;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.generate-button {
+	width: fit-content;
+	height: fit-content;
+	display: block;
+	float: right;
+	outline: none;
+	font-size: 16px;
+	border: 1px solid #000000;
+	border-bottom-right-radius: 18px;
+	border-bottom-left-radius: 100px;
+}
