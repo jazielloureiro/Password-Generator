@@ -9,28 +9,32 @@ html {
 }
 
 .password-field {
-	width: fit-content;
-	height: fit-content;
 	margin: 0 auto;
+	display: flex;
+	width: min-content;
+	height: min-content;
+	align-items: center;
+	flex-direction: column;
 }
 
 .copy-button {
-	width: fit-content;
-	height: fit-content;
-	display: block;
+	width: min-content;
+	height: min-content;
+	align-self: flex-start;
 	outline: none;
-	font-size: 16px;
+	font-size: 18px;
 	border: 1px solid #000000;
 	border-top-left-radius: 18px;
 	border-top-right-radius: 100px;
 }
 
 #password {
-	width: fit-content;
-	height: fit-content;
-	display: block;
+	width: min-content;
+	height: min-content;
+	align-self: center;
 	border: 1px solid #000000;
-	font-size: 20px;
+	font-size: 22px;
+	margin: 0;
 	resize: none;
 	outline: none;
 	border-top-right-radius: 8px;
@@ -38,12 +42,11 @@ html {
 }
 
 .generate-button {
-	width: fit-content;
-	height: fit-content;
-	display: block;
-	float: right;
+	width: min-content;
+	height: min-content;
+	align-self: flex-end;
 	outline: none;
-	font-size: 16px;
+	font-size: 18px;
 	border: 1px solid #000000;
 	border-bottom-right-radius: 18px;
 	border-bottom-left-radius: 100px;
