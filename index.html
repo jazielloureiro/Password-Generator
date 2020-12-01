@@ -15,5 +15,13 @@
 		
 			<input class="generate-button" type="button" value="Generate again">
 		</div>
+	
+		<br><br>
+
+		<div class="slider-container">
+			<p class="lengthText">Password length</p>
+			<input id="slider" type="range" min="3" max="32" value="8" onchange="updateTextValue(this.value)">
+			<input id="textInput" type="text" value="8" onchange="updateSliderValue(this.value)">
+		</div>
 	</body>
 </html>
