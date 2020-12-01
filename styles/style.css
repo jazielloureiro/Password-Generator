@@ -48,3 +48,31 @@ html {
 	border-bottom-right-radius: 18px;
 	border-bottom-left-radius: 100px;
 }
+
+.slider-container {
+	width: 400px;
+	height: fit-content;
+	display: block;
+	margin: 0 auto;
+}
+
+.lengthText {
+	font-size: 22px;
+	color: #d0d0d0;
+	text-align: center;
+}
+
+#slider {
+	display: inline-block;
+	margin: 0 auto;
+	float: left;
+	width: 350px;
+}
+
+#textInput {
+	display: inline-block;
+	margin: 0 auto;
+	float: right;
+	width: 15px;
+	height: 15px;
+}
