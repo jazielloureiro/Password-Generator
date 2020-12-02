@@ -8,20 +8,53 @@
 	<body>
 		<h1 class="header">Password Generator</h1>
 		
-		<div class="password-field">
-			<input class="copy-button" type="button" value="Copy to clipboard ">
+		<div class="password-container">
+			<input class="copy-button" type="button" value="Copy to clipboard" onclick="copy_to_clipboard()">
 		
 			<textarea id="password" rows="1" cols="32" readonly></textarea>
 		
-			<input class="generate-button" type="button" value="Generate again">
+			<input class="generate-button" type="button" value="Generate again" onclick="generate_password()">
 		</div>
 	
-		<br><br>
+		<br>
 
-		<div class="slider-container">
-			<p class="lengthText">Password length</p>
-			<input id="slider" type="range" min="3" max="32" value="8" onchange="updateTextValue(this.value)">
-			<input id="textInput" type="text" value="8" onchange="updateSliderValue(this.value)">
+		<div class="length-container">
+			<div class="title-container">
+				<h2 class="title">Length</h2>
+			</div>
+
+			<div class="slider-container">
+				<input id="slider" type="range" min="3" max="32" value="8" onchange="update_text_value(this.value)">
+				<input id="text-input" type="text" value="8" onchange="update_slider_value(this.value)">
+			</div>
+		</div>
+		
+		<br>
+		
+		<div class="checkboxes">
+			<div class="title-container">
+				<h2 class="title">Characters</h2>
+			</div>
+
+			<div class="checkbox-container" onclick="generate_password()">
+				<input id="lowercase" type="checkbox" checked>
+				<label for="lowercase">Include lowercase letters</label>
+			</div>
+
+			<div class="checkbox-container" onclick="generate_password()">
+				<input id="uppercase" type="checkbox" checked>
+				<label for="uppercase">Include uppercase letters</label>
+			</div>
+
+			<div class="checkbox-container" onclick="generate_password()">
+				<input id="numbers" type="checkbox" checked>
+				<label for="numbers">Include numbers</label>
+			</div>
+
+			<div class="checkbox-container" onclick="generate_password()">
+				<input id="symbols" type="checkbox" checked>
+				<label for="symbols">Include symbols</label>
+			</div>
 		</div>
 
 		<script src="scripts/main.js"></script>
