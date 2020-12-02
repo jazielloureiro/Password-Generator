@@ -154,3 +154,8 @@ body {
 input, label {
 	cursor: pointer;
 }
+
+.source-link {
+	width: min-content;
+	margin: 0 auto;
+}
