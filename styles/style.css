@@ -1,40 +1,43 @@
-html {
+body {
 	background-color: #2b2b2b;
 }
 
 .header {
 	text-align: center;
-	font-size: 60px;
+	font-size: 70px;
 	color: #d0d0d0;
 }
 
-.password-field {
-	margin: 0 auto;
+.password-container {
 	display: flex;
+	flex-direction: column;
 	width: min-content;
 	height: min-content;
-	align-items: center;
-	flex-direction: column;
+	margin: 0 auto;
 }
 
 .copy-button {
 	width: min-content;
 	height: min-content;
-	align-self: flex-start;
+	padding: 0 2px;
+	padding-right: 12px;
 	outline: none;
 	font-size: 18px;
 	border: 1px solid #000000;
 	border-top-left-radius: 18px;
 	border-top-right-radius: 100px;
+	border-bottom-width: 0;
+	background-color: #e8e8e8;
+	cursor: pointer;
 }
 
 #password {
 	width: min-content;
 	height: min-content;
-	align-self: center;
 	border: 1px solid #000000;
 	font-size: 22px;
 	margin: 0;
+	padding: 0 2px;
 	resize: none;
 	outline: none;
 	border-top-right-radius: 8px;
@@ -42,40 +45,85 @@ html {
 }
 
 .generate-button {
+	align-self: flex-end;
 	width: min-content;
 	height: min-content;
-	align-self: flex-end;
+	padding: 0 2px;
+	padding-left: 12px;
 	outline: none;
 	font-size: 18px;
 	border: 1px solid #000000;
 	border-bottom-right-radius: 18px;
 	border-bottom-left-radius: 100px;
+	border-top-width: 0;
+	background-color: #e8e8e8;
+	cursor: pointer;
 }
 
-.slider-container {
+.length-container {
 	width: 400px;
-	height: fit-content;
-	display: block;
+	height: min-content;
+	display: flex;
 	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #000000;
+	border-radius: 8px;
+	background-color: #cccccc;
 }
 
-.lengthText {
-	font-size: 22px;
-	color: #d0d0d0;
+.title-container {
+	width: 100%;
+	border-bottom: 1px solid #000000;
 	text-align: center;
 }
 
-#slider {
-	display: inline-block;
-	margin: 0 auto;
-	float: left;
-	width: 350px;
+.title {
+	margin: 5px;
+	font-size: 22px;
+	color: black;
 }
 
-#textInput {
-	display: inline-block;
-	margin: 0 auto;
-	float: right;
+.slider-container {
+	display: inline-flex;
+	padding: 5px;
+}
+
+#slider {
+	align-self: flex-start;
+	width: 350px;
+	cursor: pointer;
+}
+
+#text-input {
+	align-self: flex-end;
 	width: 15px;
-	height: 15px;
+	height: min-content;
+	cursor: text;
+}
+
+.checkboxes {
+	width: min-content;
+	height: min-content;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	flex-direction: column;
+	border: 1px solid #000000;
+	border-radius: 8px;
+	background-color: #cccccc;
+}
+
+.checkbox-container {
+	align-self: flex-start;
+	width: min-content;
+	height: min-content;
+	margin: 1px 5px;
+	white-space: nowrap;
+	color: black;
+	font-size: 18px;
+}
+
+input, label {
+	cursor: pointer;
 }
