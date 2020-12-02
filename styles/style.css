@@ -91,14 +91,41 @@ body {
 
 #slider {
 	align-self: flex-start;
+	appearance: none;
+	height: 5px;
+	margin: auto 2px;
+	border-radius: 2px;
+	background: #2b2b2b;
+	outline: none;
 	width: 350px;
 	cursor: pointer;
+}
+
+#slider::-webkit-slider-thumb {
+	appearance: none;
+	height: 15px;;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background: white;
+}
+
+#slider::-moz-range-thumb {
+	height: 15px;;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background: white;
 }
 
 #text-input {
 	align-self: flex-end;
 	width: 15px;
 	height: min-content;
+	padding: 0 2px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid black;
 	cursor: text;
 }
 
