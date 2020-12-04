@@ -2,13 +2,16 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Password Generator</title>
-		<link rel="icon" href="images/favicon-16x16.png">
 
-		<link href="styles/style.css" rel="stylesheet">
+		<link rel="icon" href="images/favicon-16x16.png">
+		<title>Password Generator</title>
+
+		<link rel="stylesheet" href="styles/style.css">
 	</head>
 	<body>
-		<h1 class="header">Password Generator</h1>
+		<header>
+			<h1>Password Generator</h1>
+		</header>
 		
 		<div class="password-container">
 			<input class="copy-button" type="button" value="Copy to clipboard" onclick="copy_to_clipboard()">
@@ -17,8 +20,6 @@
 		
 			<input class="generate-button" type="button" value="Generate again" onclick="generate_password()">
 		</div>
-	
-		<br>
 
 		<div class="length-container">
 			<div class="title-container">
@@ -30,8 +31,6 @@
 				<input id="text-input" type="text" value="8" onchange="update_slider_value(this.value)">
 			</div>
 		</div>
-		
-		<br>
 		
 		<div class="checkboxes">
 			<div class="title-container">
@@ -59,13 +58,11 @@
 			</div>
 		</div>
 
-		<br>
-
-		<div class="source-link">
+		<footer>
 			<a href="https://github.com/jazielloureiro/Password-Generator">
 				<img src="images/GitHub-Mark-Light-32px.png">
 			</a>
-		</div>
+		</footer>
 
 		<script src="scripts/main.js"></script>
 	</body>
