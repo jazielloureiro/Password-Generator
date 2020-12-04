@@ -8,12 +8,12 @@
 
 		<link rel="stylesheet" href="styles/style.css">
 	</head>
-	<body>
+	<body class="flexbox-container">
 		<header>
 			<h1>Password Generator</h1>
 		</header>
 		
-		<div class="password-container">
+		<div class="password-container flexbox-container">
 			<input class="copy-button" type="button" value="Copy to clipboard" onclick="copy_to_clipboard()">
 		
 			<textarea id="password" rows="1" cols="32" readonly></textarea>
@@ -21,7 +21,7 @@
 			<input class="generate-button" type="button" value="Generate again" onclick="generate_password()">
 		</div>
 
-		<div class="length-container">
+		<div class="length-container flexbox-container">
 			<div class="title-container">
 				<h2 class="title">Length</h2>
 			</div>
@@ -32,7 +32,7 @@
 			</div>
 		</div>
 		
-		<div class="checkboxes">
+		<div class="checkboxes flexbox-container">
 			<div class="title-container">
 				<h2 class="title">Characters</h2>
 			</div>
