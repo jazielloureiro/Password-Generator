@@ -129,6 +129,8 @@ h1 {
 }
 
 .checkbox-container {
+	display: flex;
+	flex-flow: row-reverse;
 	align-self: flex-start;
 	width: min-content;
 	height: min-content;
@@ -136,6 +138,47 @@ h1 {
 	white-space: nowrap;
 	color: black;
 	font-size: 18px;
+}
+
+.checkbox-container input {
+	position: absolute;
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	display: flex;
+	justify-content: center;
+	margin-right: 5px;
+	border: 1px solid black;
+	border-radius: 3px;
+	height: 15px;
+	width: 15px;
+	background-color: #eee;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+.checkmark:after {
+	content: "";
+	display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.checkbox-container .checkmark:after {
+	width: 5px;
+	height: 10px;
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 input, label {
