@@ -17,11 +17,11 @@
 		</header>
 		
 		<div class="password-container flexbox-container">
-			<input class="copy-button" type="button" value="Copy to clipboard" onclick="copy_to_clipboard()">
+			<input class="copy-button" type="button" value="Copy to clipboard" onclick="copyToClipboard()">
 		
 			<textarea id="password" rows="1" cols="32" readonly></textarea>
 		
-			<input class="generate-button" type="button" value="Generate again" onclick="generate_password()">
+			<input class="generate-button" type="button" value="Generate again" onclick="generatePassword()">
 		</div>
 
 		<div class="length-container flexbox-container">
@@ -30,8 +30,8 @@
 			</div>
 
 			<div class="slider-container">
-				<input id="slider" type="range" min="3" max="32" value="8" onchange="update_text_value(this.value)">
-				<input id="text-input" type="text" value="8" onchange="update_slider_value(this.value)">
+				<input id="slider" type="range" min="3" max="32" value="8" onchange="updateTextValue(this.value)">
+				<input id="text-input" type="text" value="8" onchange="updateSliderValue(this.value)">
 			</div>
 		</div>
 		
@@ -40,22 +40,22 @@
 				<h2 class="title">Characters</h2>
 			</div>
 
-			<label class="checkbox-container" onclick="generate_password()">Include lowercase letters
+			<label class="checkbox-container" onclick="generatePassword()">Include lowercase letters
 				<input id="lowercase" type="checkbox" checked>
 				<span class="checkmark"></span>
 			</label>
 
-			<label class="checkbox-container" onclick="generate_password()">Include uppercase letters
+			<label class="checkbox-container" onclick="generatePassword()">Include uppercase letters
 				<input id="uppercase" type="checkbox" checked>
 				<span class="checkmark"></span>
 			</label>
 
-			<label class="checkbox-container" onclick="generate_password()">Include numbers
+			<label class="checkbox-container" onclick="generatePassword()">Include numbers
 				<input id="numbers" type="checkbox" checked>
 				<span class="checkmark"></span>
 			</label>
 
-			<label class="checkbox-container" onclick="generate_password()">Include symbols
+			<label class="checkbox-container" onclick="generatePassword()">Include symbols
 				<input id="symbols" type="checkbox" checked>
 				<span class="checkmark"></span>
 			</label>

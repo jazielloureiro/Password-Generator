@@ -1,17 +1,17 @@
-function copy_to_clipboard(){
+function copyToClipboard(){
+	const minRange = 0, maxRange = 99999;
 	let password = document.getElementById("password");
-	const min_range = 0, max_range = 99999;
 
 	password.select();
-	password.setSelectionRange(min_range, max_range);
+	password.setSelectionRange(minRange, maxRange);
 
 	document.execCommand("copy");
 }
 
-function generate_password(){
-	let characters = "", password = "", password_length;
+function generatePassword(){
+	const passwordLength = document.getElementById("slider").value;
+	let characters = "", password = "";
 
-	password_length = document.getElementById("slider").value;
 
 	if(document.getElementById("lowercase").checked)
 		characters = characters.concat("abcdefghijklmnopqrstuvwxyz");
@@ -26,7 +26,7 @@ function generate_password(){
 		characters = characters.concat("!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~");
 
 	if(characters !== ""){
-		for(let i = 0; i < password_length; i++){
+		for(let i = 0; i < passwordLength; i++){
 			let index = Math.floor(Math.random() * characters.length);
 
 			password = password.concat(characters.charAt(index));
@@ -36,23 +36,23 @@ function generate_password(){
 	document.getElementById("password").value = password;
 }
 
-function update_text_value(value){
+function updateTextValue(value){
 	document.getElementById("text-input").value = value;
 
-	generate_password();
+	generatePassword();
 }
 
-function update_slider_value(value){
-	const min_value = 3, max_value = 32;
+function updateSliderValue(value){
+	const minValue = 3, maxValue = 32;
 
-	if(value < min_value)
-		value = min_value;
-	else if(value > max_value)
-		value = max_value;
+	if(value < minValue)
+		value = minValue;
+	else if(value > maxValue)
+		value = maxValue;
 
 	document.getElementById("slider").value = value;
 
-	update_text_value(value);
+	updateTextValue(value);
 }
 
-generate_password();
+generatePassword();
