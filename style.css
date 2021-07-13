@@ -21,7 +21,7 @@ h1 {
 	color: var(--yellow);
 }
 
-.copy-button {
+#copy-button {
 	align-self: flex-start;
 	width: min-content;
 	height: min-content;
@@ -48,7 +48,7 @@ h1 {
 	outline: none;
 }
 
-.generate-button {
+#generate-button {
 	align-self: flex-end;
 	width: min-content;
 	height: min-content;
