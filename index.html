@@ -17,11 +17,11 @@
 		</header>
 		
 		<div class="password-container flexbox-container">
-			<input id="copy-button" type="button" value="Copy to clipboard" onclick="copyToClipboard()">
+			<input id="copy-button" type="button" value="Copy to clipboard">
 		
 			<textarea id="password" rows="1" cols="32" readonly></textarea>
 		
-			<input id="generate-button" type="button" value="Generate again" onclick="generatePassword()">
+			<input id="generate-button" type="button" value="Generate again">
 		</div>
 
 		<div class="length-container flexbox-container">
@@ -30,8 +30,8 @@
 			</div>
 
 			<div class="slider-container">
-				<input id="slider" type="range" min="3" max="32" value="8" onchange="updateTextValue(this.value)">
-				<input id="text-input" type="text" value="8" onchange="updateSliderValue(this.value)">
+				<input id="slider" type="range" min="3" max="32" value="8">
+				<input id="text-input" type="text" value="8">
 			</div>
 		</div>
 		
@@ -40,22 +40,22 @@
 				<h2 class="title">Characters</h2>
 			</div>
 
-			<label class="checkbox-container" onclick="generatePassword()">Include lowercase letters
+			<label class="checkbox-container">Include lowercase letters
 				<input id="lowercase" type="checkbox" checked>
 				<span class="checkmark"></span>
 			</label>
 
-			<label class="checkbox-container" onclick="generatePassword()">Include uppercase letters
+			<label class="checkbox-container">Include uppercase letters
 				<input id="uppercase" type="checkbox" checked>
 				<span class="checkmark"></span>
 			</label>
 
-			<label class="checkbox-container" onclick="generatePassword()">Include numbers
+			<label class="checkbox-container">Include numbers
 				<input id="numbers" type="checkbox" checked>
 				<span class="checkmark"></span>
 			</label>
 
-			<label class="checkbox-container" onclick="generatePassword()">Include symbols
+			<label class="checkbox-container">Include symbols
 				<input id="symbols" type="checkbox" checked>
 				<span class="checkmark"></span>
 			</label>
