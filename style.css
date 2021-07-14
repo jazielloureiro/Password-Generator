@@ -16,7 +16,6 @@
 }
 
 body {
-	margin: 0;
 	background-color: var(--blue);
 }
 
@@ -28,25 +27,17 @@ h1 {
 
 #copy-button {
 	align-self: flex-start;
-	width: min-content;
-	height: min-content;
 	border: 1px solid black;
-	border-top-left-radius: 18px;
-	border-top-right-radius: 100px;
 	border-bottom-width: 0;
-	padding: 0 2px;
-	padding-right: 12px;
+	border-radius: 18px 100px 0 0;
+	padding: 0 12px 0 2px;
 	background-color: var(--gray);
 	font-size: 18px;
 }
 
 #password {
-	width: min-content;
-	height: min-content;
-	margin: 0;
 	border: 1px solid black;
-	border-top-right-radius: 8px;
-	border-bottom-left-radius: 8px;
+	border-radius: 0 8px 0 8px;
 	padding: 2px;
 	font-size: 22px;
 	resize: none;
@@ -55,21 +46,16 @@ h1 {
 
 #generate-button {
 	align-self: flex-end;
-	width: min-content;
-	height: min-content;
 	border: 1px solid black;
-	border-bottom-right-radius: 18px;
-	border-bottom-left-radius: 100px;
 	border-top-width: 0;
-	padding: 0 2px;
-	padding-left: 12px;
+	border-radius: 0 0 18px 100px;
+	padding: 0 2px 0 12px;
 	background-color: var(--gray);
 	font-size: 18px;
 }
 
 .length-container {
 	width: 400px;
-	height: min-content;
 	margin: 20px 0;
 	border: 1px solid black;
 	border-radius: 8px;
@@ -106,7 +92,7 @@ h1 {
 
 #slider::-webkit-slider-thumb {
 	appearance: none;
-	height: 15px;;
+	height: 15px;
 	width: 15px;
 	border-radius: 50%;
 	border: 1px solid black;
@@ -114,7 +100,7 @@ h1 {
 }
 
 #slider::-moz-range-thumb {
-	height: 15px;;
+	height: 15px;
 	width: 15px;
 	border-radius: 50%;
 	border: 1px solid black;
@@ -131,8 +117,7 @@ h1 {
 
 #text-input {
 	align-self: flex-end;
-	width: 15px;
-	height: min-content;
+	width: 16px;
 	padding: 0 2px;
 	font-size: 14px;
 	border-radius: 5px;
@@ -141,8 +126,6 @@ h1 {
 }
 
 .checkboxes {
-	width: min-content;
-	height: min-content;
 	border: 1px solid black;
 	border-radius: 8px;
 	background-color: var(--gray);
@@ -152,8 +135,6 @@ h1 {
 	display: flex;
 	flex-flow: row-reverse;
 	align-self: flex-start;
-	width: min-content;
-	height: min-content;
 	margin: 1px 5px;
 	white-space: nowrap;
 	color: black;
